@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>HTML Quiz</h1>
+        <p id="timer" style="color: red; font-weight: bold;">00:20</p>
+    </div>
+    <div id="quizz">
+        <p id="ques"></p>
+        <br>
+        <input onclick="tick()" type="radio" name="quiz" id="">
+        <label id="option1"></label>
+        <br><br>
+        <input onclick="tick()" type="radio" name="quiz" id="">
+        <label id="option2"></label>
+        <br><br>
+        <input onclick="tick()" type="radio" name="quiz" id="">
+        <label id="option3"></label>
+        <br><br>
+        <button id="btn" onclick="nextQuestion()">Next</button>
+    </div>
+</body>
+<script src="app.js"></script>
+</html>
