@@ -90,15 +90,25 @@ var questions = [
   }
 
   setInterval(function timer(){
-    timerElement.innerText = `00:${sec}`;
+    timerElement.style.color = "green";
+    timerElement.style.animation = "none" ;
+    timerElement.innerText = `0:${sec}`;
     sec--;
     
-    
+    if(sec < 10){
+      timerElement.style.color = "red";
+      timerElement.style.animation = "blinking 0.5s infinite" 
+    }
+
     if(sec < 0){
       
       sec = 20;
       nextQuestion()
     }
+    
+    
+      
+    
     
   }, 1000)
 
